@@ -15,3 +15,7 @@ p.pd()
 for i in range(20):
     p.fd(6)
     p.left(10)
+
+from MyFile import ShapeCreator
+
+ShapeCreator("pro", 8, 50)
