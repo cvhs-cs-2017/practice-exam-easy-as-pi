@@ -5,7 +5,7 @@ def SubVowels(AnyString):
     CipherText = ""
     CipherSub = "$#%^&"
     anyString = AnyString.lower()
-    for ch in AnyString:
+    for ch in anyString:
         if ch == "a":
             ch = CipherSub[0]
             CipherText += ch
