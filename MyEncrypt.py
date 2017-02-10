@@ -10,7 +10,7 @@ def keyGen():
         alphabet = removeChar(alphabet,ch)
     return key
 
-#CipherAlphabet = keyGen()
+CipherAlphabet = keyGen()
 alphabet = "abcdefghijklmnopqrstuvwxyz "
 
 def SubEncryption(string):
@@ -21,7 +21,7 @@ def SubEncryption(string):
         idx = alphabet.find(ch)
         CipherText += CipherAlphabet[idx]
     return CipherText
-#print(SubEncryption("the lazy student never gets paid."))
+print(SubEncryption("the lazy student never gets paid."))
 
 def SubDecyrption(CipherText2):
     string2 = ""
@@ -29,4 +29,3 @@ def SubDecyrption(CipherText2):
         idx = CipherAlphabet.find(ch)
         string2 += alphabet[idx]
     return string2
-print(SubDecyrption(" lyzerptzm wgyn znyxykziy mzsrugz"))
